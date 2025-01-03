@@ -1,0 +1,74 @@
+/* General styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin-top: 100px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Centered container for inputs and results */
+.container {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Input field styles */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border-color: #7ba69c;
+  outline: none;
+  box-shadow: 0 0 5px #b4cfc8;
+}
+
+/* Button styles */
+button {
+  background-color: #8d8d8d;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b3b4f;
+}
+
+/* Result display */
+#result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #48635d;
+}
+
+#result.error {
+  color: #dc3545; /* Red color for errors */
+}
+
+#result.success {
+  color: #28a745; /* Green color for success */
+}
